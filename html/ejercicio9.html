@@ -14,13 +14,31 @@
 
     <form action="">
 
-        Cedula
-        <input type="text" pattern="[0-9]{6,12}">
 
-        Nombre Paciente
-        <input type="text">
+        <fieldset>
 
-        <input type="submit" value="Enviar Servidor">
+            <legend>Datos Paciente</legend>
+
+            Cedula
+            <input type="text" pattern="[0-9]{6,12}" autofocus><br><br>
+
+            Nombre Paciente
+            <input type="text" pattern="[A-Z]{1}[a-z ]*"><br><br>
+
+            Fecha Nacimiento
+            <input type="text" pattern="[0-9]{4}/[0-9]{2}/[0-9]{2}"><br><br>
+
+            Nombre con Sr o Sra
+            <input type="text" pattern="(Sr|Sra) [A-Z]{1}[a-z ]*" size="40" placeholder="Sr|Sra nombre"><br><br>
+
+            Numero Celular
+            <input type="text" pattern="\+\d{2} \d{3} \d{3} \d{3}"><br><br>
+
+            <input type="submit" value="Enviar Servidor"><br>
+
+        </fieldset><br>
+
+        <textarea  cols="30" rows="3"></textarea>
 
 
     </form>
