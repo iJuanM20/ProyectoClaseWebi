@@ -98,3 +98,60 @@ figure {
     width: 150px;
 
 }
+
+#flexContenedor{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gridContenedor{
+
+    display: grid;
+    grid-template-columns: 30% 30% auto;
+     /*column-gap: 20px;
+    row-gap: 20px;*/
+    gap: 20px;
+
+    grid-template-rows: 100px 400px ;
+}
+
+div#flexContenedor > div{
+
+    width: 400px;
+    border: 1px solid red;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+div#gridContenedor > div{
+
+    
+    border: 1px solid rgb(47, 0, 255);
+}
+
+#gridArea {
+
+    display: grid;
+    grid-template-areas: "Encabezado Encabezado Encabezado Aside"
+    "Encabezado Intermedio Intermedio Aside"
+    "Encabezado Encabezado Encabezado Aside";
+}
+
+#divUno{
+
+    grid-area: Encabezado;
+    background-color: black;
+}
+
+#divDos{
+
+    grid-area: Intermedio;
+    background-color: brown;
+}
+
+#divTres{
+
+    grid-area: Aside;
+    background-color: chocolate;
+}
