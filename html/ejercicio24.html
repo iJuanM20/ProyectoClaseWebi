@@ -1,0 +1,23 @@
+<script>
+    
+    cantidadNumeroLeer = 2
+
+    for (let i = 0; i < cantidadNumeroLeer; i++) {
+
+        var numero = prompt("DIgite un numero");
+        if (esNumeroPar(numero))
+            console.log("El Numero " + numero + " Es par");
+
+        else
+            console.log("El Numero " + numero + " Es impar");
+
+    }
+
+
+    function esNumeroPar(numero) {
+
+        return numero % 2 == 0;
+    }
+
+
+</script>
