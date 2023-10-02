@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/utilidades.js"></script>
+</head>
+<body>
+
+    <script>
+
+        var h1 = crearNodoTexto("h1", "Ejemplo javaScript");
+        adicionarNodoBody(h1);
+        adicionarNodoBody(h1);
+        
+
+
+        var p = crearNodoTexto("p", "JS es un lenguajes de programacion");
+        adicionarNodoBody(p)
+        
+
+
+        var img = crearNodoImagen("../recursos/imagenes/front end.jpg");
+        adicionarNodoBody(img);
+        adicionarNodoBody(img);
+
+
+        var h2 = crearNodoTexto("h2", "Noticias")
+        adicionarNodoBody(h2)
+
+
+        var ul = crearNodo("ul");
+        var liUno = crearNodo("li", "AWS");
+        var liDos = crearNodo("li", "GCP");
+        var liTres = crearNodo("li", "Azure");
+
+
+        adicionarNodoContenedor(url,liUno);
+        adicionarNodoContenedor(url,liDos);
+        adicionarNodoContenedor(url,liTres);
+    </script>
+    
+</body>
+</html>
